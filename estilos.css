@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+}
+
+main {
+    padding: 2rem;
+}
+
+/* Sección de contenido principal (dos columnas para resumen y más información) */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+/* Estilo de las secciones */
+section {
+    background-color: #fff;
+    margin-bottom: 20px;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Sección de galería de imágenes */
+.galeria .imagenes-galeria {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+
+.galeria img {
+    max-width: 200px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+    transform: scale(1.05);
+}
+
+/* Testimonios */
+.testimonios {
+    background-color: #e0f7fa;
+}
+
+.testimonio {
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-left: 5px solid #97dee7;
+}
+
+/* Estadísticas */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+table, th, td {
+    border: 1px solid #faf8f8;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #8be7f7;
+    color: rgb(7, 7, 7);
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/*historia-niobio*/
+th {
+    max-width: 800px;
+    margin: 30px auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333;
+}
+/*historia-niobio .titulo-cuadro*/
+th {
+    background-color: #a8d0e6; /* azul pastel */
+    padding: 20px 30px;
+    border-radius: 12px 12px 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.8rem;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fuente redondeada y más informal */
+    color: #034078;
+}
+/*historia-niobio .texto-cuadro*/
+th {
+    background-color: #088af5;
+    padding: 25px 30px;
+    border-radius: 0 0 12px 12px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+
+/* Pie de Página */
+footer {
+    background-color: #4fc9fa;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Diseño Responsivo */
+@media (max-width: 768px) {
+    .contenido-principal {
+        flex-direction: column;
+    }
+
+    .galeria .imagenes-galeria {
+        flex-direction: column;
+    }
+}
